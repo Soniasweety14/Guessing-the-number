@@ -2,16 +2,16 @@ import java.util.Scanner;
 public class user{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        int number = (int)(Math.random()*100);
+        int no = (int)(Math.random()*100);
         int num=0;
         do{
             System.out.println("Guess The Number From 1 to 99");
             num = sc.nextInt();
-            if(num==number){
+            if(num==no){
                 System.out.println("You guess the Right number");
                 break;
             }
-            else if(num>number){
+            else if(num>no){
                 System.out.println("You guess is bigger");
             }
             else{
@@ -19,7 +19,7 @@ public class user{
             }
         }while(num >= 0);
         System.out.println("your number is " );
-        System.out.println(number);
+        System.out.println(no);
     }
     
 }
